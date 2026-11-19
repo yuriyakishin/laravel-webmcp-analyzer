@@ -10,6 +10,8 @@ A Livewire tool for Laravel that checks how ready a site is for AI agents. It fi
 
 It needs no AI and no headless browser: the page and its scripts are analysed statically.
 
+![WebMCP Analyzer report](images/webmcp.png)
+
 **🔗 Live example: [yu.net.ua/en/tools/webmcp-analyzer](https://yu.net.ua/en/tools/webmcp-analyzer)**
 
 ## What it checks
