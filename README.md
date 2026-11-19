@@ -74,6 +74,14 @@ After every check the tool dispatches `Yu\WebToolsCore\Events\ToolCheckedEvent` 
 
 The analysis is static. Some tools are registered at run time, for example from a list fetched from an API. They show as "(dynamic)", and the checks on how clear the tools are get skipped for them.
 
+## Author
+
+Yuriy Akishin:
+- 🌐 Website: https://yu.net.ua
+- 📧 Email: yuriy.akishin@gmail.com
+- 💼 LinkedIn: https://www.linkedin.com/in/yuriyakishin/
+- 💻 GitHub: https://github.com/yuriyakishin
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
