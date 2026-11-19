@@ -1,5 +1,5 @@
 {
-    "name": "yu-laravel/webmcp-analyzer",
+    "name": "yu-laravel/laravel-webmcp-analyzer",
     "description": "Laravel Livewire tool that checks how a page exposes WebMCP tools to AI agents.",
     "type": "library",
     "keywords": [
@@ -9,7 +9,7 @@
         "mcp",
         "ai-agents"
     ],
-    "homepage": "https://github.com/yuriyakishin/webmcp-analyzer",
+    "homepage": "https://github.com/yuriyakishin/laravel-webmcp-analyzer",
     "license": "MIT",
     "authors": [
         {
@@ -23,7 +23,7 @@
         "ext-mbstring": "*",
         "laravel/framework": "^13.0",
         "livewire/livewire": "^4.0",
-        "yu-laravel/web-tools-core": "^1.0"
+        "yu-laravel/laravel-web-tools-core": "^1.0"
     },
     "autoload": {
         "psr-4": {

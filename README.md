@@ -34,10 +34,10 @@ It needs no AI and no headless browser: the page and its scripts are analysed st
 ## Installation
 
 ```bash
-composer require yu-laravel/webmcp-analyzer
+composer require yu-laravel/laravel-webmcp-analyzer
 ```
 
-This also installs [`yu-laravel/web-tools-core`](https://github.com/yuriyakishin/web-tools-core). Both service providers are discovered automatically.
+This also installs [`yu-laravel/laravel-web-tools-core`](https://github.com/yuriyakishin/laravel-web-tools-core). Both service providers are discovered automatically.
 
 ## Usage
 
@@ -50,10 +50,10 @@ Put the component on a page whose layout includes `@livewireStyles` and `@livewi
 This tool has no stylesheet of its own. Import the core styles into your CSS build:
 
 ```css
-@import "../../vendor/yu-laravel/web-tools-core/resources/css/web-tools-core.css";
+@import "../../vendor/yu-laravel/laravel-web-tools-core/resources/css/web-tools-core.css";
 ```
 
-To match your site's colours and fonts, override the `--wt-*` variables (see [Web Tools Core](https://github.com/yuriyakishin/web-tools-core#styles)).
+To match your site's colours and fonts, override the `--wt-*` variables (see [Web Tools Core](https://github.com/yuriyakishin/laravel-web-tools-core#styles)).
 
 ## Configuration
 
@@ -62,11 +62,11 @@ To match your site's colours and fonts, override the `--wt-*` variables (see [We
 | `WEBMCP_ANALYZER_ENABLED` | `true` | Turn the tool off without uninstalling it. |
 | `WEBMCP_ANALYZER_PER_HOUR` | `10` | Checks per visitor IP per hour. |
 
-A report is cached for 10 minutes. `config/webmcp-analyzer.php` also limits the page size (2 MB) and the scripts read (10 scripts, 1 MB each, 3 MB in total). Page fetching (timeouts, redirects, user agent) is set in [Web Tools Core](https://github.com/yuriyakishin/web-tools-core#configuration).
+A report is cached for 10 minutes. `config/webmcp-analyzer.php` also limits the page size (2 MB) and the scripts read (10 scripts, 1 MB each, 3 MB in total). Page fetching (timeouts, redirects, user agent) is set in [Web Tools Core](https://github.com/yuriyakishin/laravel-web-tools-core#configuration).
 
 ## Events
 
-After every check the tool dispatches `Yu\WebToolsCore\Events\ToolCheckedEvent` with `tool = "webmcp-analyzer"` (see [Listening to checks](https://github.com/yuriyakishin/web-tools-core#listening-to-checks)).
+After every check the tool dispatches `Yu\WebToolsCore\Events\ToolCheckedEvent` with `tool = "webmcp-analyzer"` (see [Listening to checks](https://github.com/yuriyakishin/laravel-web-tools-core#listening-to-checks)).
 
 ## Languages
 
