@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Yu\WebMcpAnalyzer\Livewire;
 
 use Illuminate\Contracts\View\View;

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Yu\WebMcpAnalyzer\Services;
 
 use Yu\WebMcpAnalyzer\Data\ImperativeTool;
