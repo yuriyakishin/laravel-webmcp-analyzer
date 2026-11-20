@@ -23,7 +23,7 @@
         "ext-mbstring": "*",
         "laravel/framework": "^13.0",
         "livewire/livewire": "^4.0",
-        "yu-laravel/web-tools-core": "^1.0"
+        "yu-laravel/web-tools-core": "^1.0.2"
     },
     "autoload": {
         "psr-4": {
