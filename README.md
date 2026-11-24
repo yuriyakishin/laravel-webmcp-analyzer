@@ -66,7 +66,8 @@ A report is cached for 10 minutes. `config/webmcp-analyzer.php` also limits the 
 
 ## Events
 
-After every check the tool dispatches `Yu\WebToolsCore\Events\ToolCheckedEvent` with `tool = "webmcp-analyzer"` (see [Listening to checks](https://github.com/yuriyakishin/laravel-web-tools-core#listening-to-checks)).
+- `Yu\WebMcpAnalyzer\Events\WebMcpAnalyzerEvent` fires after every finished check: successful, failed or from the cache. It carries `url`, `locale`, `report` (null on failure), `error` and `fromCache`. Listen to it to follow this tool only.
+- `Yu\WebToolsCore\Events\ToolCheckedEvent` fires next to it with `tool = "webmcp-analyzer"` and the same data, shared by all the web tools (see [Listening to checks](https://github.com/yuriyakishin/laravel-web-tools-core#listening-to-checks)).
 
 ## Languages
 

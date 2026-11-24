@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Yu\WebMcpAnalyzer\Livewire;
 
 use Illuminate\Contracts\View\View;
+use Yu\WebMcpAnalyzer\Events\WebMcpAnalyzerEvent;
 use Yu\WebMcpAnalyzer\Services\WebMcpAnalyzer;
 use Yu\WebToolsCore\Livewire\ToolComponent;
 use Yu\WebToolsCore\Locale\LocaleResolver;
@@ -17,6 +18,11 @@ class WebMcpAnalyzerComponent extends ToolComponent
     protected function name(): string
     {
         return 'webmcp-analyzer';
+    }
+
+    protected function event(): string
+    {
+        return WebMcpAnalyzerEvent::class;
     }
 
     protected function locales(): LocaleResolver
